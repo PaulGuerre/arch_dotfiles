@@ -1,0 +1,87 @@
+[
+    {
+        "layer": "top",
+        "position": "top",
+        "modules-left": ["sway/workspaces", "sway/mode"],
+        "modules-center": ["sway/window"],
+        "modules-right": ["network", "pulseaudio", "cpu", "memory", "battery", "clock"],
+        "pulseaudio": {
+            "format": "{volume}% {icon}",
+            "format-bluetooth": "{volume}% ",
+            "format-muted": "",
+            "format-icons": {
+                "default": ["", ""]
+            },
+            "tooltip": false
+        },
+        "network": {
+            "interface": "wlp1s0",
+            "format-wifi": "",
+            "format-disconnected": "",
+            "tooltip-format-wifi": "{essid} - {signalStrength}%",
+            "tooltip-format-disconnected": "Disconnected"
+        },
+        "cpu": {
+            "format": "{usage}% ",
+            "tooltip": false
+        },
+        "memory": {
+            "format": "{percentage}% ",
+            "tooltip": false
+        },
+        "battery": {
+            "bat": "BAT0",
+            "states": {
+                "warning": 30,
+                "critical": 15
+            },
+            "format": "{capacity}% {icon}",
+            "format-icons": ["", "", "", "", ""],
+            "tooltip": false
+        },
+        "clock": {
+            "timezone": "Europe/Paris",
+            "tooltip-format": "{:%d-%m-%Y}"
+        }
+    },
+    {
+        "layer": "bottom", 
+        "position": "bottom", 
+        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify"],
+        "custom/firefox": {
+            "on-click": "firefox",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/mail": {
+            "on-click": "chromium --app=https://mail.google.com",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/discord": {
+            "on-click": "discord",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/bash": {
+            "on-click": "alacritty",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/code": {
+            "on-click": "code",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/idea": {
+            "on-click": "intellij-idea-ultimate-edition",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/spotify": {
+            "on-click": "spotify",
+            "format": "",
+            "tooltip": false
+        }
+    }
+]

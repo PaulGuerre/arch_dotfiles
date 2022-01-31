@@ -1,0 +1,6 @@
+[output *]
+#image=/home/paul/.config/oguri/wallpaper.png
+image=/home/paul/.config/oguri/wallpaper.gif
+filter=good
+scaling-mode=fill
+anchor=center

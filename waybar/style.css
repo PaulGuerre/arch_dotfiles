@@ -1,0 +1,74 @@
+* {
+    color: white;
+}
+
+window#waybar.top {
+    background-color: transparent;
+    color: white;
+    font-size: 110%;
+}
+
+window#waybar.top .modules-center {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+window#waybar.top .modules-left {
+    background-color: #20466a;
+    color: #1f70bd;   
+}
+
+window#waybar.bottom {
+    background-color: transparent;
+}
+
+tooltip {
+    background-color: #20466a;
+    border: solid 2px white;
+}
+
+#workspaces button {                                                      
+    background: transparent;  
+    border: none;  
+    box-shadow: none;                                                                                    
+}
+
+#workspaces button.focused {
+    background-color: #1f70bd;
+    border-radius: 0;
+}
+
+#battery, #memory, #cpu, #network, #pulseaudio {
+    margin-right: 15px;
+}
+
+#battery.charging {
+    color: green;
+}
+
+#battery.warning:not(.charging) {
+    color: yellow;
+}
+
+#battery.critical:not(.charging) {
+    color: red;
+}
+
+#clock {
+    margin-right: 5px;
+}
+
+#custom-firefox, #custom-mail, #custom-discord, #custom-bash, #custom-code, #custom-idea {
+    margin-right: 50px;
+    font-size: 250%;
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: solid 4px #1f70bd;
+}
+
+#custom-spotify {
+    font-size: 250%;
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: solid 4px #1f70bd;
+}

@@ -1,0 +1,10 @@
+border-color=#ffffff
+
+[app-name=Spotify]
+border-color=#0ecc32
+background-color=#000000
+
+[app-name=discord]
+border-color=#9000ff
+ignore-timeout=0
+default-timeout=7000
