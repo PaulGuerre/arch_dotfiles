@@ -40,14 +40,14 @@
             "tooltip": false
         },
         "clock": {
-            "timezone": "Europe/Paris",
+            "timezone": "America/Montreal",
             "tooltip-format": "{:%d-%m-%Y}"
         }
     },
     {
         "layer": "bottom", 
         "position": "bottom", 
-        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify"],
+        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch"],
         "custom/firefox": {
             "on-click": "firefox",
             "format": "",
@@ -81,6 +81,21 @@
         "custom/spotify": {
             "on-click": "spotify",
             "format": "",
+            "tooltip": false
+        },
+        "custom/outlook": {
+            "on-click": "chromium --app=https://outlook.office.com/mail/",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/ytb": {
+            "on-click": "chromium --app=https://youtube.com/",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/twitch": {
+            "on-click": "chromium --app=https://twitch.tv/",
+            "format": "",
             "tooltip": false
         }
     }
