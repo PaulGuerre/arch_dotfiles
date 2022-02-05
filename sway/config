@@ -274,4 +274,7 @@ bar {
 # Systemd wob config    
      exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
+# Clipboard
+    exec wl-paste -t text --watch clipman store --no-persist
+
 include /etc/sway/config.d/*
