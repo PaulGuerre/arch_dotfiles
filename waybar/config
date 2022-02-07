@@ -47,7 +47,7 @@
     {
         "layer": "bottom", 
         "position": "bottom", 
-        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch"],
+        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch", "custom/thunar"],
         "custom/firefox": {
             "on-click": "firefox",
             "format": "",
@@ -96,6 +96,11 @@
         "custom/twitch": {
             "on-click": "chromium --app=https://twitch.tv/",
             "format": "",
+            "tooltip": false
+        },
+        "custom/thunar": {
+            "on-click": "thunar",
+            "format": "",
             "tooltip": false
         }
     }
