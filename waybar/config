@@ -47,7 +47,7 @@
     {
         "layer": "bottom", 
         "position": "bottom", 
-        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch", "custom/thunar"],
+        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch", "custom/thunar", "custom/gdoc"],
         "custom/firefox": {
             "on-click": "firefox",
             "format": "",
@@ -101,6 +101,11 @@
         "custom/thunar": {
             "on-click": "thunar",
             "format": "",
+            "tooltip": false
+        },
+        "custom/gdoc": {
+            "on-click": "chromium --app=https://www.google.fr/intl/fr/docs/about/",
+            "format": "",
             "tooltip": false
         }
     }
