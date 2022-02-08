@@ -277,4 +277,8 @@ bar {
 # Clipboard
     exec wl-paste -t text --watch clipman store --no-persist
 
+# Floating app
+    for_window [app_id="Thunar"] floating enable
+    for_window [app_id="thunar"] floating enable
+
 include /etc/sway/config.d/*
