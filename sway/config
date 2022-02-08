@@ -280,5 +280,6 @@ bar {
 # Floating app
     for_window [app_id="Thunar"] floating enable
     for_window [app_id="thunar"] floating enable
+    for_window [title="win0"] floating enable
 
 include /etc/sway/config.d/*
