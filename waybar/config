@@ -47,7 +47,7 @@
     {
         "layer": "bottom", 
         "position": "bottom", 
-        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch", "custom/thunar", "custom/gdoc"],
+        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch", "custom/thunar", "custom/gdoc", "custom/element", "custom/steam"],
         "custom/firefox": {
             "on-click": "firefox",
             "format": "",
@@ -106,6 +106,16 @@
         "custom/gdoc": {
             "on-click": "chromium --app=https://www.google.fr/intl/fr/docs/about/",
             "format": "",
+            "tooltip": false
+        },
+        "custom/element": {
+            "on-click":"chromium --app=https://element.sukine.fr",
+            "format": "",
+            "tooltip": false
+        },
+        "custom/steam": {
+            "on-click":"steam",
+            "format": "",
             "tooltip": false
         }
     }
