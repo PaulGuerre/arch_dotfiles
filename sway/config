@@ -251,7 +251,7 @@ bar {
     #exec --no-startup-id swayblur -b 20 -a 10 -c /home/paul/.config/oguri/config
 
 # Borders
-    client.focused          #282828 #282828 #ffffff #ffffff   #1f70bd
+    client.focused          #282828 #282828 #ffffff #1f70bd   #1f70bd
     client.focused_inactive #282828 #282828 #ffffff #ffffff   #20466a
     client.unfocused        #282828 #282828 #888888 #ffffff   #20466a
 
@@ -270,6 +270,7 @@ bar {
 # App started at launch
     #exec chromium --app=https://discord.com/channels/@me
     exec mako 
+    exec alacritty --hold -e screenfetch
 
 # Systemd wob config    
      exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -282,6 +283,7 @@ bar {
     for_window [app_id="thunar"] floating enable
     for_window [title="win0"] floating enable
     for_window [title="Covid Tac Toe"] floating enable
-    for_window [title="Steam Guard - Computer Authorization Required"] floating enable
+    for_window [title="Steam Guard - Autorisation de l'ordinateur requise"] floating enable
+    for_window [title="Welcome to IntelliJ IDEA"] floating enable
 
 include /etc/sway/config.d/*
