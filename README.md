@@ -2,6 +2,6 @@
 
 Personal sway config files 
 
-![capture-2022-01-31_13-01-1643632707](https://user-images.githubusercontent.com/56794631/151796644-d4102ebe-092d-45dc-b734-e62b940111cb.png)
+![capture-2022-03-08_14-03-1646768517](https://user-images.githubusercontent.com/56794631/157312878-4e987da5-1953-4bf8-8bdb-c8661b6fe5be.png)
 
-![capture-2022-01-27_18-01-1643304944](https://user-images.githubusercontent.com/56794631/151796654-dd2f4a1e-213c-4987-a990-41db3d3f624a.png)
+![capture-2022-03-08_14-03-1646768524](https://user-images.githubusercontent.com/56794631/157312895-7e182928-138b-4935-ab25-50a52f78d833.png)
