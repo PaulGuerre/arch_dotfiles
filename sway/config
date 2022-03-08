@@ -18,7 +18,8 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run
+#set $menu wofi --show run
+set $menu ulauncher
 
 ### Output configuration
 #
@@ -80,6 +81,8 @@ set $menu wofi --show run
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    # Start ulauncher
+    #bindsym Ctrl+space exec ulauncher
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -216,7 +219,7 @@ bar {
 
 # wob config
     set $WOBSOCK /tmp/wobpipe
-    exec mkfifo $WOBSOCK && tail -f $WOBSOCK | wob --bar-color=#1f70bdff --border-color=#20466aff --background-color=#00000000
+    exec mkfifo $WOBSOCK && tail -f $WOBSOCK | wob --bar-color=#ff6961ff --border-color=#6c71c4ff --background-color=#292b2eff
 
 # Take a screenshot with all output and save it into screenshots
     bindsym Print exec grim $HOME/Images/capture-$(date +%Y-%m-%d_%H-%m-%s).png
@@ -241,7 +244,7 @@ bar {
     #smart_gaps on
     gaps inner 20
     gaps outer 20
-    default_border pixel 5
+    default_border pixel 4
 
 # font
     font pango: SourceCodePro Medium 12
@@ -251,9 +254,9 @@ bar {
     #exec --no-startup-id swayblur -b 20 -a 10 -c /home/paul/.config/oguri/config
 
 # Borders
-    client.focused          #282828 #282828 #ffffff #1f70bd   #1f70bd
-    client.focused_inactive #282828 #282828 #ffffff #ffffff   #20466a
-    client.unfocused        #282828 #282828 #888888 #ffffff   #20466a
+    client.focused          #282828 #282828 #ffffff #302c2c   #302c2c
+    client.focused_inactive #282828 #282828 #ffffff #302c2c   #302c2c
+    client.unfocused        #282828 #282828 #888888 #302c2c   #302c2c
 
 # Lockscreen
     exec swayidle -w \
@@ -270,7 +273,8 @@ bar {
 # App started at launch
     #exec chromium --app=https://discord.com/channels/@me
     exec mako 
-    exec alacritty --hold -e screenfetch
+    exec alacritty --hold -e neofetch
+    #exec ulauncher
 
 # Systemd wob config    
      exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -285,5 +289,7 @@ bar {
     for_window [title="Covid Tac Toe"] floating enable
     for_window [title="Steam Guard - Autorisation de l'ordinateur requise"] floating enable
     for_window [title="Welcome to IntelliJ IDEA"] floating enable
+    for_window [app_id="ulauncher"] floating enable, border none, move position 620 5
+    for_window [title="Select Folder"] floating enable
 
 include /etc/sway/config.d/*

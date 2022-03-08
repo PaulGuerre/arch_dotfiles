@@ -1,122 +1,94 @@
-[
-    {
-        "layer": "top",
-        "position": "top",
-        "modules-left": ["sway/workspaces", "sway/mode"],
-        "modules-center": ["sway/window"],
-        "modules-right": ["network", "pulseaudio", "cpu", "memory", "battery", "clock"],
-        "pulseaudio": {
-            "format": "{volume}% {icon}",
-            "format-bluetooth": "{volume}% ",
-            "format-muted": "",
-            "format-icons": {
-                "default": ["", ""]
-            },
-            "tooltip": false
-        },
-        "network": {
-            "interface": "wlp1s0",
-            "format-wifi": "",
-            "format-disconnected": "",
-            "tooltip-format-wifi": "{essid} - {signalStrength}%",
-            "tooltip-format-disconnected": "Disconnected"
-        },
-        "cpu": {
-            "format": "{usage}% ",
-            "tooltip": false
-        },
-        "memory": {
-            "format": "{percentage}% ",
-            "tooltip": false
-        },
-        "battery": {
-            "bat": "BAT0",
-            "states": {
-                "warning": 30,
-                "critical": 15
-            },
-            "format": "{capacity}% {icon}",
-            "format-icons": ["", "", "", "", ""],
-            "tooltip": false
-        },
-        "clock": {
-            "timezone": "America/Montreal",
-            "tooltip-format": "{:%d-%m-%Y}"
-        }
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": [
+		"sway/workspaces",
+		"custom/right-arrow-dark"
+	],
+	"modules-center": [
+		"custom/left-arrow-dark",
+		"clock",
+		"custom/right-arrow-dark"
+	],
+	"modules-right": [
+		"custom/left-arrow-dark",
+		"network",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"pulseaudio",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"cpu",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"memory",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"battery"
+	],
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+    "network": {
+        "interface": "wlp1s0",
+        "format-wifi": " {signalStrength}%",
+        "format-disconnected": "",
+        "tooltip-format-wifi": "{essid} - {signalStrength}%",
+        "tooltip-format-disconnected": "Disconnected"
     },
-    {
-        "layer": "bottom", 
-        "position": "bottom", 
-        "modules-center": ["custom/firefox", "custom/mail", "custom/discord", "custom/bash", "custom/code", "custom/idea", "custom/spotify", "custom/outlook", "custom/ytb", "custom/twitch", "custom/thunar", "custom/gdoc", "custom/element", "custom/steam"],
-        "custom/firefox": {
-            "on-click": "firefox",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/mail": {
-            "on-click": "chromium --app=https://mail.google.com",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/discord": {
-            "on-click": "discord",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/bash": {
-            "on-click": "alacritty",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/code": {
-            "on-click": "code",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/idea": {
-            "on-click": "intellij-idea-ultimate-edition",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/spotify": {
-            "on-click": "spotify",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/outlook": {
-            "on-click": "chromium --app=https://outlook.office.com/mail/",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/ytb": {
-            "on-click": "chromium --app=https://youtube.com/",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/twitch": {
-            "on-click": "chromium --app=https://twitch.tv/",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/thunar": {
-            "on-click": "thunar",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/gdoc": {
-            "on-click": "chromium --app=https://www.google.fr/intl/fr/docs/about/",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/element": {
-            "on-click":"chromium --app=https://element.sukine.fr",
-            "format": "",
-            "tooltip": false
-        },
-        "custom/steam": {
-            "on-click":"steam",
-            "format": "",
-            "tooltip": false
-        }
-    }
-]
+    "clock": {
+        "timezone": "America/Montreal",
+        "tooltip-format": "{:%d-%m-%Y}"
+    },
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}% ",
+        "format-muted": " ",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		}
+	},
+	"memory": {
+		"interval": 5,
+		"format": "Mem {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "CPU {usage:2}%"
+	},
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	}
+}

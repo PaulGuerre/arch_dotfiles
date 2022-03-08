@@ -1,74 +1,73 @@
 * {
-    color: white;
+	font-size: 20px;
+	font-family: monospace;
 }
 
-window#waybar.top {
-    background-color: transparent;
-    color: white;
-    font-size: 110%;
+window#waybar {
+	background: #292b2e;
+	color: #fdf6e3;
 }
 
-window#waybar.top .modules-center {
-    font-weight: bold;
-    font-size: 120%;
+#custom-right-arrow-dark, #custom-left-arrow-dark {
+	color: #1a1a1a;
 }
 
-window#waybar.top .modules-left {
-    background-color: #20466a;
-    color: #1f70bd;   
+#custom-right-arrow-light, #custom-left-arrow-light {
+	color: #292b2e;
+	background: #1a1a1a;
 }
 
-window#waybar.bottom {
-    background-color: transparent;
+#workspaces, #clock, #network, #pulseaudio, #memory, #cpu, #battery {
+	background: #1a1a1a;
 }
 
-tooltip {
-    background-color: #20466a;
-    border: solid 2px white;
+#workspaces button {
+	padding: 0 2px;
+	color: #fdf6e3;
 }
-
-#workspaces button {                                                      
-    background: transparent;  
-    border: none;  
-    box-shadow: none;                                                                                    
-}
-
 #workspaces button.focused {
-    background-color: #1f70bd;
-    border-radius: 0;
+	color: #ffb347;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #1a1a1a;
+	border: #1a1a1a;
+	padding: 0 3px;
 }
 
-#battery, #memory, #cpu, #network, #pulseaudio {
-    margin-right: 15px;
+#network {
+    color: #ff6961;
+}
+
+#pulseaudio {
+	color: #ffb347;
+}
+#memory {
+	color: #268bd2;
+}
+#cpu {
+	color: #2aa198;
+}
+
+#battery {
+	color: #6c71c4;
 }
 
 #battery.charging {
-    color: green;
+    color: #859900;
 }
 
 #battery.warning:not(.charging) {
-    color: yellow;
+    color: #fdfd96;
 }
 
 #battery.critical:not(.charging) {
-    color: red;
+    color: #ff6961;
 }
 
-#clock {
-    margin-right: 5px;
-}
-
-#custom-firefox, #custom-mail, #custom-discord, #custom-bash, #custom-code, #custom-idea, #custom-spotify, #custom-outlook, #custom-ytb, #custom-twitch, #custom-thunar, #custom-gdoc, #custom-element {
-    margin-right: 50px;
-    font-size: 250%;
-    color: white;
-    padding-bottom: 4px;
-    border-bottom: solid 4px #1f70bd;
-}
-
-#custom-steam {
-    font-size: 250%;
-    color: white;
-    padding-bottom: 4px;
-    border-bottom: solid 4px #1f70bd;
+#clock, #network, #pulseaudio, #memory, #cpu, #battery {
+	padding: 0 10px;
 }
