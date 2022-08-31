@@ -6,20 +6,23 @@
 
 ### Variables
 #
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
+
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
+
 # Your preferred terminal emulator
 set $term alacritty
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-#set $menu wofi --show run
-set $menu ulauncher
+set $menu wofi --show run
 
 ### Output configuration
 #
@@ -74,15 +77,13 @@ set $menu ulauncher
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec $term -e fish
 
     # Kill focused window
     bindsym $mod+BackSpace kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    # Start ulauncher
-    #bindsym Ctrl+space exec ulauncher
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -168,10 +169,10 @@ set $menu ulauncher
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    #bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    #bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
@@ -179,11 +180,11 @@ set $menu ulauncher
     # You can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+    bindsym $mod+Shift+a move scratchpad
 
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+    bindsym $mod+a scratchpad show
 #
 # Resizing containers:
 #
@@ -218,8 +219,11 @@ bar {
 }
 
 # wob config
-    set $WOBSOCK /tmp/wobpipe
-    exec mkfifo $WOBSOCK && tail -f $WOBSOCK | wob --bar-color=#ff6961ff --border-color=#6c71c4ff --background-color=#292b2eff
+    set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+    exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
+
+    #set $WOBSOCK /tmp/wobpipe
+    #exec mkfifo $WOBSOCK && tail -f $WOBSOCK | wob --bar-color=#154360ff --border-color=#6c71c4ff --background-color=#154360ff
 
 # Take a screenshot with all output and save it into screenshots
     bindsym Print exec grim $HOME/Images/capture-$(date +%Y-%m-%d_%H-%m-%s).png
@@ -246,9 +250,6 @@ bar {
     gaps outer 20
     default_border pixel 4
 
-# font
-    font pango: SourceCodePro Medium 12
-
 # Wallpaper
     exec --no-startup-id oguri -c /home/paul/.config/oguri/config
     #exec --no-startup-id swayblur -b 20 -a 10 -c /home/paul/.config/oguri/config
@@ -268,28 +269,21 @@ bar {
     bindsym $mod+l exec bash ~/.config/swaylock/config.sh
 
 # GTK theme
-    #exec_always import-gsettings
+    exec_always import-gsettings
 
 # App started at launch
-    #exec chromium --app=https://discord.com/channels/@me
-    exec mako 
-    exec alacritty --hold -e neofetch
-    #exec ulauncher
+    exec mako
 
 # Systemd wob config    
      exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Clipboard
-    exec wl-paste -t text --watch clipman store --no-persist
+    #exec wl-paste -t text --watch clipman store --no-persist
 
 # Floating app
-    for_window [app_id="Thunar"] floating enable
-    for_window [app_id="thunar"] floating enable
-    for_window [title="win0"] floating enable
-    for_window [title="Covid Tac Toe"] floating enable
-    for_window [title="Steam Guard - Autorisation de l'ordinateur requise"] floating enable
-    for_window [title="Welcome to IntelliJ IDEA"] floating enable
-    for_window [app_id="ulauncher"] floating enable, border none, move position 620 5
-    for_window [title="Select Folder"] floating enable
+    #for_window [title="example" || app_id="example"] floating enable
+    for_window [app_id="imv"] floating enable
+
+xwayland enable
 
 include /etc/sway/config.d/*

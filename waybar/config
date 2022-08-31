@@ -1,94 +1,62 @@
 {
-	"layer": "top",
-	"position": "top",
-	"modules-left": [
-		"sway/workspaces",
-		"custom/right-arrow-dark"
-	],
-	"modules-center": [
-		"custom/left-arrow-dark",
-		"clock",
-		"custom/right-arrow-dark"
-	],
-	"modules-right": [
-		"custom/left-arrow-dark",
-		"network",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"pulseaudio",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"cpu",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"memory",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"battery"
-	],
-	"custom/left-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/left-arrow-light": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/right-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/right-arrow-light": {
-		"format": "",
-		"tooltip": false
-	},
-	"sway/workspaces": {
-		"disable-scroll": true,
-		"format": "{name}"
-	},
-    "network": {
-        "interface": "wlp1s0",
-        "format-wifi": " {signalStrength}%",
-        "format-disconnected": "",
-        "tooltip-format-wifi": "{essid} - {signalStrength}%",
-        "tooltip-format-disconnected": "Disconnected"
-    },
+    "margin-top": 10,
+    "margin-right": 10,
+    "margin-left": 10,
+    "modules-left": ["custom/audio", "pulseaudio", "custom/luminosity", "backlight", "custom/network", "network"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["custom/cpu", "cpu", "custom/memory", "memory", "custom/battery", "battery", "clock"],
     "clock": {
-        "timezone": "America/Montreal",
+        "timezone": "Europe/Paris",
         "tooltip-format": "{:%d-%m-%Y}"
     },
-	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-bluetooth": "{icon} {volume}% ",
-        "format-muted": " ",
-		"format-icons": {
-			"headphones": "",
-			"default": [
-				"",
-				""
-			]
-		}
-	},
-	"memory": {
-		"interval": 5,
-		"format": "Mem {}%"
-	},
-	"cpu": {
-		"interval": 5,
-		"format": "CPU {usage:2}%"
-	},
-	"battery": {
-		"states": {
-			"warning": 30,
-			"critical": 15
-		},
-		"format": "{icon} {capacity}%",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		]
-	}
+    "custom/luminosity": {
+        "format": "",
+        "tooltip": false
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}"
+    },
+    "custom/cpu": {
+        "format": "",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "{usage}"
+    },
+    "custom/memory": {
+        "format": "",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}"
+    },
+    "custom/battery": {
+        "format": "",
+        "tooltip": false
+    },
+    "battery": {
+        "format": "{capacity}"
+    },
+    "custom/network": {
+        "format": "",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": "{signalStrength}",
+        "tooltip-format": "{essid}"
+    },
+    "custom/audio": {
+        "format": "",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "{volume}",
+        "tooltip": false
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "current-only": true,
+        "disable-click": true
+    }
 }

@@ -1,73 +1,83 @@
 * {
-	font-size: 20px;
-	font-family: monospace;
+    font-family: "Font Awesome 5 Free";
+    font-family: 'Arial';
+    font-size: 13px;
 }
 
 window#waybar {
-	background: #292b2e;
-	color: #fdf6e3;
+    background-color: transparent;
 }
 
-#custom-right-arrow-dark, #custom-left-arrow-dark {
-	color: #1a1a1a;
-}
-
-#custom-right-arrow-light, #custom-left-arrow-light {
-	color: #292b2e;
-	background: #1a1a1a;
-}
-
-#workspaces, #clock, #network, #pulseaudio, #memory, #cpu, #battery {
-	background: #1a1a1a;
-}
-
-#workspaces button {
-	padding: 0 2px;
-	color: #fdf6e3;
-}
-#workspaces button.focused {
-	color: #ffb347;
-}
-#workspaces button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
-}
-#workspaces button:hover {
-	background: #1a1a1a;
-	border: #1a1a1a;
-	padding: 0 3px;
-}
-
-#network {
-    color: #ff6961;
+#custom-audio {
+    padding: 0 15px;
+    background-color: #3949AB;
 }
 
 #pulseaudio {
-	color: #ffb347;
+    padding: 0 15px;
+    background-color: #424242;
 }
-#memory {
-	color: #268bd2;
+
+#custom-luminosity {
+    padding: 0 15px;
+    background-color: #3949AB;
 }
+
+#backlight {
+    padding: 0 15px;
+    background-color: #424242;
+}
+
+#custom-network {
+    padding: 0 15px;
+    background-color: #3949AB;
+}
+
+#network {
+    padding: 0 15px;
+    background-color: #424242;
+}
+
+#workspaces {
+    background-color: #3949AB;
+}
+
+#workspaces button:hover {
+	background: transparent;
+	border: transparent;
+}
+
+#custom-cpu {
+    padding: 0 15px;
+    background-color: #424242;
+}
+
 #cpu {
-	color: #2aa198;
+    padding: 0 15px;
+    background-color: #3949AB;
+}
+
+#custom-memory {
+    padding: 0 15px;
+    background-color: #424242;
+}
+
+#memory {
+    padding: 0 15px;
+    background-color: #3949AB;
+}
+
+#custom-battery {
+    padding: 0 15px;
+    background-color: #424242;
 }
 
 #battery {
-	color: #6c71c4;
+    padding: 0 15px;
+    background-color: #3949AB;
 }
 
-#battery.charging {
-    color: #859900;
-}
-
-#battery.warning:not(.charging) {
-    color: #fdfd96;
-}
-
-#battery.critical:not(.charging) {
-    color: #ff6961;
-}
-
-#clock, #network, #pulseaudio, #memory, #cpu, #battery {
-	padding: 0 10px;
+#clock {
+    padding: 0 15px;
+    background-color: #424242;
 }
