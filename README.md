@@ -7,14 +7,19 @@
 
 * **Shell** : [Zsh ](https://www.zsh.org) with [starship](https://github.com/starship/starship) 🌠 Highly customizable
 * **Terminal** : [Alacritty ](https://github.com/alacritty/alacritty) 📰 Classic one
+
 ![capture-2022-09-12_16-09-1662992693](https://user-images.githubusercontent.com/56794631/189679413-c6b3a95f-5bb8-4f3e-a88b-74e25fff28a7.png)
 
 * **Bar** : [Waybar ](https://github.com/Alexays/Waybar) 🍸 Beautiful and customizable
+
 ![capture-2022-09-12_16-09-1662992606](https://user-images.githubusercontent.com/56794631/189679980-94aeedb8-3411-497e-a47c-325b522271db.png)
 
 * **Notify Daemon** : [Mako ](https://github.com/alacritty/alacritty) 🏓 Lightweight and pleasant
 
+![capture-2022-09-12_17-09-1662997307](https://user-images.githubusercontent.com/56794631/189697347-88380e51-d7db-4561-989c-75ccb748f3c3.png)
+
 * **Menu** : [Wofi ](https://github.com/davatorium/rofi) 🛎 Classic and nice
+
 ![capture-2022-09-12_16-09-1662992616](https://user-images.githubusercontent.com/56794631/189679866-ddee2b18-3dc5-4704-9135-3dce7b2885ba.png)
 
 * **File Manager** : [Thunar ](https://gitlab.xfce.org/xfce/thunar) 📁 The one
