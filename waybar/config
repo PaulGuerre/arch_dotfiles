@@ -2,61 +2,82 @@
     "margin-top": 10,
     "margin-right": 10,
     "margin-left": 10,
-    "modules-left": ["custom/audio", "pulseaudio", "custom/luminosity", "backlight", "custom/network", "network"],
-    "modules-center": ["sway/workspaces"],
-    "modules-right": ["custom/cpu", "cpu", "custom/memory", "memory", "custom/battery", "battery", "clock"],
+    "modules-left": ["custom/firefox", "custom/discord", "custom/spotify", "custom/twitch"],
+    "modules-center": ["battery","backlight","pulseaudio", "clock", "network","cpu","memory"],
+    "modules-right": ["temperature", "custom/reboot", "custom/shutdown"],
     "clock": {
+        "format": " {:%H:%M}",
         "timezone": "Europe/Paris",
-        "tooltip-format": "{:%d-%m-%Y}"
-    },
-    "custom/luminosity": {
-        "format": "",
         "tooltip": false
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{percent}"
-    },
-    "custom/cpu": {
-        "format": "",
+        "format": " {percent}",
         "tooltip": false
     },
     "cpu": {
-        "format": "{usage}"
-    },
-    "custom/memory": {
-        "format": "",
+        "format": " {usage}",
         "tooltip": false
     },
     "memory": {
-        "format": "{}"
-    },
-    "custom/battery": {
-        "format": "",
+        "format": " {}",
         "tooltip": false
     },
     "battery": {
-        "format": "{capacity}"
-    },
-    "custom/network": {
-        "format": "",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25,
         "tooltip": false
     },
     "network": {
-        "format-wifi": "{signalStrength}",
-        "tooltip-format": "{essid}"
-    },
-    "custom/audio": {
-        "format": "",
+        "format": " {signalStrength}",
         "tooltip": false
     },
     "pulseaudio": {
-        "format": "{volume}",
+        "format": " {volume}",
+        "format-bluetooth": " {volume}",
+        "format-muted": "",
         "tooltip": false
     },
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "current-only": true,
-        "disable-click": true
+    "custom/firefox": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "firefox"
+    },
+    "custom/discord": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "discord"
+    },
+    "custom/spotify": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "spotify"
+    },
+    "custom/twitch": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "chromium --app=https://twitch.tv"
+    },
+    "custom/shutdown": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "systemctl poweroff"
+    },
+    "custom/reboot": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "systemctl reboot"
+    },
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "format": " {temperatureC}°C",
+        "interval": 2,
+        "tooltip": false
     }
 }

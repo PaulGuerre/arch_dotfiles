@@ -1,4 +1,7 @@
-border-color=#ffffff
+background-color=#282a36
+border-color=#006acd
+border-radius=10
+font=SourceCodePro
 
 [app-name=Spotify]
 border-color=#0ecc32

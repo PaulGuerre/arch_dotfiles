@@ -1,83 +1,112 @@
 * {
-    font-family: "Font Awesome 5 Free";
-    font-family: 'Arial';
+    font-family: "SourceCodePro, Font Awesome 5 Free";
     font-size: 13px;
+}
+
+tooltip {
+	background: #282a36;
+	border-radius: 15px;
 }
 
 window#waybar {
     background-color: transparent;
 }
 
-#custom-audio {
-    padding: 0 15px;
-    background-color: #3949AB;
+.modules-center {
+    background-color: #282a36;
+    min-height:40px;
+    min-width: 50px;
+    border-radius: 30px;
 }
 
-#pulseaudio {
-    padding: 0 15px;
-    background-color: #424242;
+.modules-left {
+    background-color: #282a36;
+    min-height:40px;
+    min-width: 50px;
+    border-radius: 30px;
 }
 
-#custom-luminosity {
-    padding: 0 15px;
-    background-color: #3949AB;
-}
-
-#backlight {
-    padding: 0 15px;
-    background-color: #424242;
-}
-
-#custom-network {
-    padding: 0 15px;
-    background-color: #3949AB;
-}
-
-#network {
-    padding: 0 15px;
-    background-color: #424242;
-}
-
-#workspaces {
-    background-color: #3949AB;
-}
-
-#workspaces button:hover {
-	background: transparent;
-	border: transparent;
-}
-
-#custom-cpu {
-    padding: 0 15px;
-    background-color: #424242;
-}
-
-#cpu {
-    padding: 0 15px;
-    background-color: #3949AB;
-}
-
-#custom-memory {
-    padding: 0 15px;
-    background-color: #424242;
-}
-
-#memory {
-    padding: 0 15px;
-    background-color: #3949AB;
-}
-
-#custom-battery {
-    padding: 0 15px;
-    background-color: #424242;
-}
-
-#battery {
-    padding: 0 15px;
-    background-color: #3949AB;
+.modules-right {
+    background-color: #282a36;
+    min-height:40px;
+    min-width: 50px;
+    border-radius: 30px;
 }
 
 #clock {
     padding: 0 15px;
-    background-color: #424242;
+    color: #FFBCD1;
+}
+
+#network {
+    padding: 0 15px;
+    color: #CE7BB0;
+}
+
+#cpu {
+    padding: 0 15px;
+    color: #A267AC;
+}
+
+#memory {
+    padding: 0 15px;
+    color: #6867AC;
+}
+
+#pulseaudio {
+    padding: 0 15px;
+    color: #CE7BB0;
+}
+
+#backlight {
+    padding: 0 15px;
+    color: #A267AC;
+}
+
+#battery {
+    padding: 0 15px;
+    color: #6867AC;
+}
+
+#battery.charging {
+    color: palegreen;
+}
+
+#battery.warning:not(.charging) {
+    color: palevioletred;
+}
+
+#custom-firefox {
+    padding: 0 15px;
+    color: #6867AC;
+}
+
+#custom-discord {
+    padding: 0 15px;
+    color: #A267AC;
+}
+
+#custom-spotify {
+    padding: 0 15px;
+    color: #CE7BB0;
+}
+
+#custom-twitch {
+    padding: 0 15px;
+    color: #FFBCD1;
+}
+
+#custom-shutdown {
+    padding: 0 15px;
+    color: #6867AC;
+}
+
+#custom-reboot {
+    padding: 0 15px;
+    color: #A267AC;
+}
+
+#temperature {
+    padding: 0 15px;
+    color: #CE7BB0;
 }
