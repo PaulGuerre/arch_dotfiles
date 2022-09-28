@@ -8,11 +8,11 @@
 * **Shell** : [Zsh ](https://www.zsh.org) with [starship](https://github.com/starship/starship) 🌠 Highly customizable
 * **Terminal** : [Alacritty ](https://github.com/alacritty/alacritty) 📰 Classic one
 
-![capture-2022-09-12_16-09-1662992693](https://user-images.githubusercontent.com/56794631/189679413-c6b3a95f-5bb8-4f3e-a88b-74e25fff28a7.png)
+![capture-2022-09-20_08-09-1663657040](https://user-images.githubusercontent.com/56794631/191188460-fe97ec5e-a0b6-4b48-b58d-14c54931f23a.png)
 
 * **Bar** : [Waybar ](https://github.com/Alexays/Waybar) 🍸 Beautiful and customizable
 
-![capture-2022-09-12_16-09-1662992606](https://user-images.githubusercontent.com/56794631/189679980-94aeedb8-3411-497e-a47c-325b522271db.png)
+![capture-2022-09-20_08-09-1663656964](https://user-images.githubusercontent.com/56794631/191188359-12fd9122-23d6-4ffe-a523-0b21e8b41f03.png)
 
 * **Notify Daemon** : [Mako ](https://github.com/alacritty/alacritty) 🏓 Lightweight and pleasant
 
@@ -20,7 +20,7 @@
 
 * **Menu** : [Wofi ](https://github.com/davatorium/rofi) 🛎 Classic and nice
 
-![capture-2022-09-12_16-09-1662992616](https://user-images.githubusercontent.com/56794631/189679866-ddee2b18-3dc5-4704-9135-3dce7b2885ba.png)
+![capture-2022-09-20_08-09-1663656955](https://user-images.githubusercontent.com/56794631/191188271-e9001773-5d1e-4397-9aeb-f3b2069ef873.png)
 
 * **File Manager** : [Thunar ](https://gitlab.xfce.org/xfce/thunar) 📁 The one
 * **Locking** : [Swaylock](https://github.com/swaywm/swaylock) 🛡 Custom texts : [Swaylock-effects-text](https://github.com/Paulobergine/swaylock-effects-text)
@@ -30,11 +30,11 @@
 ## Others
 
 * **Spotify** : Theme thanks to Spicetify
-* **GTK Theme** : Adwaita-Dark
+* **GTK Theme** : Arc-Dark
 * **Police** : SourceCodePro
 
 ## Global rendering
-![capture-2022-09-12_16-09-1662992976](https://user-images.githubusercontent.com/56794631/189680563-3fc19325-49b2-4d0e-a94a-79bb99892362.png)
-![capture-2022-09-12_16-09-1662992974](https://user-images.githubusercontent.com/56794631/189680579-fcaa1890-8c89-4ea0-b221-f4006af6cca2.png)
+![capture-2022-09-20_08-09-1663656868](https://user-images.githubusercontent.com/56794631/191188070-60df1c5e-73e4-4854-b8ba-16f5d282f1f1.png)
+![capture-2022-09-20_08-09-1663656872](https://user-images.githubusercontent.com/56794631/191188079-5f5667cc-ade2-46da-ad4f-07424473c718.png)
 
 Special thanks to : [Useful add ons for sway](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
