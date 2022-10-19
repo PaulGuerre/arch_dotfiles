@@ -3,7 +3,7 @@
 * **OS** : [Archlinux ](https://archlinux.org/) 🚀 Best one
 * **Window Manager** : [Hyprland ](https://github.com/hyprwm/Hyprland) 🖥 Nice animations
 * **Bootloader** : [Grub-silent](https://wiki.archlinux.org/title/silent_boot) 🔅 Clean boot 🔅 then [Plymouth](https://wiki.archlinux.org/title/plymouth) 🎇 Pleasant animation on boot
-* **Login Manager** : [Ly](https://github.com/fairyglade/ly) 🙇 Clean and fast login
+* **Login Manager** : [Ly](https://github.com/fairyglade/ly) 🙇 Clean and fast login (but now autologin then trigger swaylock)
 
 * **Shell** : [Zsh ](https://www.zsh.org) with [starship](https://github.com/starship/starship) 🌠 Highly customizable
 * **Terminal** : [Alacritty ](https://github.com/alacritty/alacritty) 📰 Classic one
