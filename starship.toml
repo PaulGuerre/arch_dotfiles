@@ -5,17 +5,17 @@ right_format = "$cmd_duration"
 add_newline = false
 
 [character]
-success_symbol = "[➜](bold purple) "
-error_symbol = "[➜](bold red) "
+success_symbol = "[➜](bold #bd93f9) "
+error_symbol = "[➜](bold #ff5555) "
 
 [hostname]
 ssh_only = false
-format = "[$hostname](bold purple) "
+format = "[$hostname](bold #bd93f9) "
 disabled = false
 
 [cmd_duration]
 min_time = 1
-format = "[$duration](bold blue)"
+format = "[$duration](bold #bd93f9)"
 
 [directory]
 truncation_length = 5
@@ -30,13 +30,13 @@ truncation_symbol = ""
 format = ""
 
 [java]
-symbol = "[](bold red) "
+symbol = "[](bold #ff5555) "
 
 [nodejs]
-symbol = "[](bold yellow) "
+symbol = "[](bold #f1fa8c) "
 
 [ruby]
-symbol = "[](bold red) "
+symbol = "[](bold #ff5555) "
 
 [python]
-symbol = "[](bold green) "
+symbol = "[](bold 	#50fa7b) "

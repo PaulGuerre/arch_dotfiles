@@ -1,0 +1,1 @@
+wob --bar-color=#6c71c4ff --border-color=#6c71c4ff --background-color=#282a36ff

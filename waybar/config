@@ -1,12 +1,9 @@
 {
-    "margin-top": 10,
-    "margin-right": 10,
-    "margin-left": 10,
-    "modules-left": ["custom/firefox", "custom/discord", "custom/spotify", "custom/twitch"],
-    "modules-center": ["battery","backlight","pulseaudio", "clock", "network","cpu","memory"],
-    "modules-right": ["temperature", "custom/reboot", "custom/shutdown"],
+    "modules-left": ["custom/arch", "cpu", "memory", "temperature"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/spotify", "custom/weather", "custom/notification" ,"network", "pulseaudio", "backlight", "battery"],
     "clock": {
-        "format": " {:%H:%M}",
+        "format": "{:%e %B %Y %H:%M}",
         "timezone": "Europe/Paris",
         "tooltip": false
     },
@@ -44,40 +41,43 @@
         "format-muted": "",
         "tooltip": false
     },
-    "custom/firefox": {
-        "format": "",
+    "custom/arch": {
+        "format": "",
         "tooltip": false,
-        "on-click": "firefox"
-    },
-    "custom/discord": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "discord"
-    },
-    "custom/spotify": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "spotify"
-    },
-    "custom/twitch": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "chromium --app=https://twitch.tv"
-    },
-    "custom/shutdown": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "systemctl poweroff"
-    },
-    "custom/reboot": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "systemctl reboot"
+        "on-click": "alacritty --hold -e neofetch"
     },
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "format": " {temperatureC}°C",
         "interval": 2,
         "tooltip": false
+    },
+    "custom/spotify": {
+        "exec": "playerctl metadata --format '{{ artist }} - {{ title }}'",
+        "interval": 10,
+        "format": "  {}",
+        "tooltip": false
+    },
+    "custom/weather": {
+        "exec": "curl -s wttr.in/Paris?format=1",
+        "interval": 100,
+        "format": "{}",
+        "tooltip": false
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+          "notification": "",
+          "none": "",
+          "dnd-notification": "",
+          "dnd-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
     }
 }

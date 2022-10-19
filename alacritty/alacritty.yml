@@ -193,7 +193,7 @@ colors:
   # Default colors
   primary:
     background: '#282a36'
-    foreground: '#aed6f1'
+    foreground: '#bd93f9'
 
     # Bright and dim foreground colors
     #

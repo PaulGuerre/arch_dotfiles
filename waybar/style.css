@@ -1,112 +1,41 @@
 * {
-    font-family: "SourceCodePro, Font Awesome 5 Free";
-    font-size: 13px;
-}
-
-tooltip {
-	background: #282a36;
-	border-radius: 15px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
 }
 
 window#waybar {
-    background-color: transparent;
+    color: #bd93f9;
+    background-color: rgba(40, 42, 54, 0.7);
+    border-radius: 0%;
 }
 
-.modules-center {
-    background-color: #282a36;
-    min-height:40px;
-    min-width: 50px;
-    border-radius: 30px;
-}
-
-.modules-left {
-    background-color: #282a36;
-    min-height:40px;
-    min-width: 50px;
-    border-radius: 30px;
-}
-
+.modules-center,
+.modules-left,
 .modules-right {
-    background-color: #282a36;
     min-height:40px;
-    min-width: 50px;
-    border-radius: 30px;
 }
 
-#clock {
+#clock,
+#network,
+#cpu,
+#memory,
+#pulseaudio,
+#backlight,
+#battery,
+#temperature,
+#custom-arch,
+#custom-spotify,
+#custom-weather,
+#custom-notification {
     padding: 0 15px;
-    color: #FFBCD1;
-}
-
-#network {
-    padding: 0 15px;
-    color: #CE7BB0;
-}
-
-#cpu {
-    padding: 0 15px;
-    color: #A267AC;
-}
-
-#memory {
-    padding: 0 15px;
-    color: #6867AC;
-}
-
-#pulseaudio {
-    padding: 0 15px;
-    color: #CE7BB0;
-}
-
-#backlight {
-    padding: 0 15px;
-    color: #A267AC;
-}
-
-#battery {
-    padding: 0 15px;
-    color: #6867AC;
 }
 
 #battery.charging {
-    color: palegreen;
+    background-color: transparent;
+    color: #50fa7b;
 }
 
 #battery.warning:not(.charging) {
-    color: palevioletred;
-}
-
-#custom-firefox {
-    padding: 0 15px;
-    color: #6867AC;
-}
-
-#custom-discord {
-    padding: 0 15px;
-    color: #A267AC;
-}
-
-#custom-spotify {
-    padding: 0 15px;
-    color: #CE7BB0;
-}
-
-#custom-twitch {
-    padding: 0 15px;
-    color: #FFBCD1;
-}
-
-#custom-shutdown {
-    padding: 0 15px;
-    color: #6867AC;
-}
-
-#custom-reboot {
-    padding: 0 15px;
-    color: #A267AC;
-}
-
-#temperature {
-    padding: 0 15px;
-    color: #CE7BB0;
+    background-color: transparent;
+    color: #ff5555;
 }
